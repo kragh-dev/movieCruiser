@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="icon" href="images/favicon.png">
+        <title>Menu List - Admin</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/editValidation.js"></script>
+    </head>
+    <body class="body1">
+         <header class="header">
+            <div class="logo">
+                <i class="fa fa-film"></i>
+                <h2>movieCruiser</h2>
+            </div>
+            <nav class="nav_links">
+                <a href="MovieListAdmin.html">Movies</a>
+            </nav>
+        </header>
+        <div class="edit">
+            <div>
+                <h2>Edit Movie</h2>
+            </div>
+            <div class="editMovieForm">
+                <form action="EditMovieStatus.html">
+                    <table class="editMovieName">
+                        <tr>
+                            <th>Name</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Movie Name" required id="name" minlength="2" maxlength="65"/>
+                        </tr>
+                    </table>
+                    <table class="editMovieDetails">
+                        <tr>
+                            <th>Gross ($)</th>
+                            <th>Active</th>
+                            <th>Date of Launch</th>
+                            <th>Genre</th>
+                        </tr>
+                        <tr>
+                            <td><input type="number" id="gross" required min="1"></td>
+                            <td>
+                                <div>
+                                    <input type="radio" value="Yes" name="freeDel" checked/><p>Yes</p>
+                                    <input type="radio" value="No" name="freeDel"/><p>No</p>
+                                </div>
+                            </td>
+                            <td>
+                                <input type="date" required>
+                            </td>
+                            <td>
+                                <select id="genre" name="genre" required>
+                                    <option value="">Select</option>
+                                    <option value="Science Fiction">Science Fiction</option>
+                                    <option value="Superhero">Superhero</option>
+                                    <option value="Romance">Romance</option>
+                                    <option value="Comedy">Comedy</option>
+                                    <option value="Adventure">Adventure</option>
+                                    <option value="Thriller">Thriller</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="editMovieDelAndSave">
+                        <tr>
+                            <td><input type="checkbox" value="Free Delivery"/> Free Delivery</td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" class="submitEditItem" value="Save" onclick="validate()"/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <h4>Copyright &copy; | truYum 2019</h4>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>movieCruiser - Movie List Customer</title>
+        <link rel="icon" href="images/movieCruiser.jpg">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/favAdd.js"></script>
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="logo">
+                <i class="fa fa-film"></i>
+                <h2>movieCruiser</h2>
+            </div>
+            <nav class="nav_links">
+                <a href="MovieListCustomer.html">Movies</a>
+                <a href="Favorites.html">Favorites</a>
+            </nav>
+        </header>
+        <div>
+            <div class="menu">
+            <div class="addItem">
+                <h2>Movies</h2>
+                <input type="image" src="images/addItem.svg" alt="addItem" height="30px"/>
+            </div>
+            <div class="favAddStatus">
+                <p class="status" id="favStatus"></p>
+            </div>
+            <div class="menuList">
+                <table class="menuListTable">
+                    <col width="30%">
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="10%">
+                    <tr>
+                        <th>Title</th>
+                        <th>Box Office</th>
+                        <th>Genre</th>
+                        <th>Has Teaser</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>Avatar</td>
+                        <td class="boxOffice">2787965087</td>
+                        <td>Science Fiction</td>
+                        <td>Yes</td>
+                        <td><a href="#" onclick="addToFavorite()">Add to Favorite</a></td>
+                    </tr>
+                    <tr>
+                        <td>The Avengers</td>
+                        <td class="boxOffice">1518812988</td>
+                        <td>Superhero</td>
+                        <td>No</td>
+                        <td><a href="#" onclick="addToFavorite()">Add to Favorite</a></td>
+                    </tr>
+                    <tr>
+                        <td>Titanic</td>
+                        <td class="boxOffice">2187463944</td>
+                        <td>Romance</td>
+                        <td>No</td>
+                        <td><a href="#" onclick="addToFavorite()">Add to Favorite</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <h4>Copyright &copy; | movieCruiser 2019</h4>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/backgroundLogin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.loginBox {
+    margin-left: 67%;
+    margin-top: 26.5%;
+}
+
+.login {
+    width: 45%;
+    text-align: center;
+    align-content: center;
+}
+
+.login tr {
+    height: 70px;
+}
+
+.login tr td .credentials {
+    height: 45px;
+    width: 100%;
+    min-width: 100px;
+    border-radius: 40px;
+    border: 0;
+    background-color: black;
+    padding: 20px;
+    font-family: 'Manjari', sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+.login tr td .loginButton {
+    height: 45px;
+    width: 100px;
+    border-radius: 40px;
+    border: 0;
+    font-family: 'Manjari', sans-serif;
+    font-size: 15px;
+}
+
+.heading {
+    font-family: 'Manjari', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
